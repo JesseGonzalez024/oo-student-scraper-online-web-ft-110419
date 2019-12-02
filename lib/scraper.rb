@@ -45,7 +45,7 @@ class Scraper
         end  
       students_hash
       
-      binding.pry
+      # binding.pry
   end
 
 end
