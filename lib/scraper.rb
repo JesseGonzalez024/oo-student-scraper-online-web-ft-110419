@@ -37,10 +37,10 @@ class Scraper
           students_hash[:blog] = website
         end
       end
-        if doc.css('.profile-quote').text
+        if doc.css('.profile-quote')
           students_hash[:profile_quote] = doc.css('.profile-quote').text
         end
-        if doc.css(".description-holder")[0].children[1].text
+        if doc.css(".description-holder")[0].children[1]
           students_hash[:bio] = doc.css(".description-holder")[0].children[1].text
         end  
       students_hash
