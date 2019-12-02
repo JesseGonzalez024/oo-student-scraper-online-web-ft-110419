@@ -37,7 +37,8 @@ class Scraper
           students_hash[:blog] = website
         end
       end
-        if 
+        if doc.css('.profile-quote').text
+          
       
       students_hash[:profile_quote] = doc.css('.profile-quote').text
       binding.pry
