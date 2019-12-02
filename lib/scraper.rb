@@ -44,7 +44,8 @@ class Scraper
           students_hash[:bio] = doc.css(".description-holder")[0].children[1].text
         end  
       students_hash
-      #binding.pry
+      
+      binding.pry
   end
 
 end
